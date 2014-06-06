@@ -1,3 +1,14 @@
+linux (3.4.55-2linuxcnc) wheezy; urgency=low
+
+  * pick '"uname -v" shows package version' fix from upstream
+  * update to linux 3.4.55
+  * add RTAI featureset (using memfrob's rtai patch from commit a0dc5355
+    of Shabby's RTAI repo)
+  * remove all non-i386, non-amd64 arches
+  * Start from debian kernel package sources, r19214
+
+ -- Sebastian Kuzminsky <seb@highlab.com>  Tue, 08 Jul 2014 18:07:44 -0600
+
 linux (3.4.4-1~experimental.1) experimental; urgency=low
 
   * New upstream stable update:
