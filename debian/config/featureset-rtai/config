@@ -1,0 +1,104 @@
+# Kernel config for RTAI 4.0, x86                              -*-conf-*-
+#
+
+# This config should be applied on top of a generic kernel config to,
+# hopefully, create a working configuration for a RTAI-patched
+# kernel.
+#
+#######################################
+#
+# IPIPE options
+#
+CONFIG_IPIPE=y
+# memleak recommends this; why?
+CONFIG_IPIPE_LEGACY=y
+# CONFIG_IPIPE_DEBUG is not set
+#
+#######################################
+#
+# General problem options; see
+# http://www.xenomai.org/documentation/xenomai-2.6/html/TROUBLESHOOTING/index.html#kconf
+#
+# CONFIG_CPU_IDLE is not set
+#
+# CONFIG_KGDB is not set
+#
+#######################################
+# x86 kernel configuration
+# http://www.xenomai.org/index.php/Configuring_x86_kernels
+#
+# Do not disable power management globally, the only configuration
+# options which should be disabled in this area are:
+#
+# CONFIG_APM is not set
+# CONFIG_ACPI_PROCESSOR is not set
+#
+# This option creates issues with Xenomai timing code, as well as
+# unpredictable run-time for your tasks, and possibly high latencies
+# when changing frequency:
+#
+# CONFIG_CPU_FREQ is not set
+#
+# This can cause big latency spikes:
+#
+# CONFIG_INPUT_PCSPKR is not set
+#
+# The option CONFIG_PCI_MSI should be turned off. For more details,
+# see the thread at:
+# https://mail.gna.org/public/adeos-main/2008-08/threads.html
+#
+# CONFIG_PCI_MSI is not set
+#
+############################################
+# Tips and tricks setting up your x86 kernel; see
+# http://www.xenomai.org/index.php/FAQs#Tips_and_tricks_setting_up_your_x86_kernel
+#
+# Just like CONFIG_ACPI_PROCESSOR, this idle driver sends the CPU into
+# deep C states, also causing huge latencies because the APIC timer
+# that Xenomai uses may not fire anymore.
+#
+# CONFIG_INTEL_IDLE is not set
+#
+############################################
+# Other changes
+#
+# Disable FTRACE to improve latencies
+# http://www.xenomai.org/pipermail/xenomai/2013-January/027272.html
+# CONFIG_FTRACE is not set
+# and dependent option
+# CONFIG_KMEMCHECK is not set
+#
+# CONFIG_CPUMASK_OFFSTACK disables functions that pass cpumasks on
+# the stack.  Xenomai uses set_cpus_allowed(), which takes a cpumask
+# as an argument, in many places.  Disable this config and related
+# configs.
+#
+# CONFIG_CPUMASK_OFFSTACK is not set
+#
+# CONFIG_MAXSMP turns CONFIG_CPUMASK_OFFSTACK on automatically
+# CONFIG_MAXSMP is not set
+#
+# Upstream config sets CONFIG_NR_CPUS to 1024, which make config seems
+# not to like when CONFIG_MAXSMP is off
+CONFIG_NR_CPUS=8
+#
+# Jan's fix for x86 arch kernel oops:
+# kernel BUG at mm/mmap.c:2313!
+# invalid opcode: 0000 [#2] SMP 
+# http://www.xenomai.org/pipermail/xenomai-help/2011-06/msg00197.html
+# CONFIG_TRANSPARENT_HUGEPAGE is not set
+#
+# Gilles says this improves latencies
+# http://www.xenomai.org/pipermail/xenomai/2013-January/027272.html
+# CONFIG_FTRACE is not set
+# This apparently depends on !FTRACE
+# CONFIG_KMEMCHECK is not set
+#
+# gpio-pch is broken
+# http://www.xenomai.org/pipermail/xenomai/2013-January/027365.html
+# CONFIG_GPIO_PCH is not set
+#
+# Gilles: CONFIG_PREEMPT_NONE, results in shorter worst case latencies
+# http://permalink.gmane.org/gmane.linux.real-time.xenomai.users/18499
+# https://github.com/zultron/kernel-rt-deb/issues/2
+CONFIG_PREEMPT_NONE=y
