@@ -34,8 +34,12 @@ compiler: gcc-4.9
 featuresets:
  none
  rt
+ rtai
 
 [featureset-rt_base]
+enabled: true
+
+[featureset-rtai_base]
 enabled: true
 
 [description]
