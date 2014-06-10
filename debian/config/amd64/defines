@@ -2,6 +2,7 @@
 featuresets:
  none
  rt
+ rtai
 kernel-arch: x86
 
 [build]
