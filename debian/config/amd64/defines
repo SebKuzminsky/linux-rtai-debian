@@ -1,6 +1,7 @@
 [base]
 featuresets:
  none
+ rtai
 kernel-arch: x86
 
 [build]
