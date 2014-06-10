@@ -8,6 +8,10 @@ arches:
 compiler: gcc-4.6
 featuresets:
  none
+ rtai
+
+[featureset-rtai_base]
+enabled: true
 
 [description]
 part-long-up: This kernel is not suitable for SMP (multi-processor,

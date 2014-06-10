@@ -1,0 +1,7 @@
+[abi]
+ignore-changes: *
+
+[description]
+part-long-rtai: This kernel includes the ShabbyX/memleak RTAI realtime patch set.
+part-short-rtai: RTAI
+parts: rtai
