@@ -3,31 +3,11 @@ abiname: trunk
 
 [base]
 arches:
- alpha
  amd64
- armel
- armhf
- hppa
  i386
- ia64
- m68k
- mips
- mipsel
- powerpc
- ppc64
- s390
- s390x
- sh4
- sparc
- sparc64
- x32
 compiler: gcc-4.6
 featuresets:
  none
- rt
-
-[featureset-rt_base]
-enabled: true
 
 [description]
 part-long-up: This kernel is not suitable for SMP (multi-processor,
