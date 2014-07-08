@@ -1,7 +1,7 @@
 Section: kernel
 Priority: optional
-Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
-Uploaders: Bastian Blank <waldi@debian.org>, Frederik Schüler <fs@debian.org>, maximilian attems <maks@debian.org>, Ben Hutchings <ben@decadent.org.uk>
+Maintainer: Sebastian Kuzminsky <seb@highlab.com>
+Uploaders: Sebastian Kuzminsky <seb@highlab.com>
 Standards-Version: 3.9.2
 Build-Depends: debhelper (>> 7), cpio, kmod | module-init-tools, python (>= 2.6.6-3~), lzma [armel], kernel-wedge (>= 2.84), quilt, patchutils
 Build-Depends-Indep: bzip2, xmlto
