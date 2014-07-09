@@ -1,3 +1,9 @@
+linux (3.4.55-3linuxcnc) wheezy; urgency=low
+
+  * turn on CONFIG_USB_[OE]HCI_HCD_PLATFORM
+
+ -- Sebastian Kuzminsky <seb@highlab.com>  Wed, 09 Jul 2014 10:52:05 -0600
+
 linux (3.4.55-2linuxcnc) wheezy; urgency=low
 
   * pick '"uname -v" shows package version' fix from upstream
