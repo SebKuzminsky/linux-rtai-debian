@@ -111,3 +111,7 @@ features/all/aufs3/aufs3-fix-export-__devcgroup_inode_permission.patch
 #features/arm/kirkwood-add-iconnect-support.patch
 #
 #features/arm/net-drop-NET-dependency-from-HAVE_BPF_JIT.patch
+
+# Test USB Bug Fixes
+bugfix/all/usb-fix-1.patch
+bugfix/all/usb-fix-2.patch
