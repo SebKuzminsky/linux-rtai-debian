@@ -1,3 +1,9 @@
+linux (3.4.55-4linuxcnc) wheezy; urgency=low
+
+  * Add Patch to fix USB on Intel Baytrail MB
+
+ -- Brian Morel <brianmorel99@gmail.com>  Tue, 21 OCt 2014 10:52:05 -0600
+
 linux (3.4.55-3linuxcnc) wheezy; urgency=low
 
   * turn on CONFIG_USB_[OE]HCI_HCD_PLATFORM
