@@ -1,3 +1,10 @@
+linux (3.16.7-3linuxcnc) UNRELEASED; urgency=medium
+
+  * add RTAI featureset
+  * start from debian kernel package sources
+
+ -- Sebastian Kuzminsky <seb@highlab.com>  Wed, 18 Nov 2015 00:05:23 -0700
+
 linux (3.16.7-2) unstable; urgency=medium
 
   [ Ian Campbell ]
