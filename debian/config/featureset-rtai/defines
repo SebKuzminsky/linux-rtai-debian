@@ -2,6 +2,6 @@
 ignore-changes: *
 
 [description]
-part-long-rtai: This kernel includes the RTAI patch from rtai.org.
+part-long-rtai: This kernel includes the RTAI patch "hal-linux-3.16.7-x86-5.patch" from rtai.org, based on IPIPE_CORE_RELEASE 5.
 part-short-rtai: RTAI
 parts: rtai

@@ -1,11 +1,17 @@
-linux (3.16.7-5linuxcnc) UNRELEASED; urgency=medium
+linux (3.16.7-6linuxcnc) unstable; urgency=medium
+
+  * Include the RTAI patch version info in the package Description field.
+
+ -- Sebastian Kuzminsky <seb@highlab.com>  Tue, 01 Dec 2015 08:44:15 -0700
+
+linux (3.16.7-5linuxcnc) unstable; urgency=medium
 
   * add RTAI featureset Vulcano, 5.0~test1, 2015-11-22:
         kernel patch hal-linux-3.16.7-x86-5.patch
         md5sum 9a6c595ea62b04076aedb50120aa0256
   * start from debian kernel package sources
 
- -- Sebastian Kuzminsky <seb@highlab.com>  Wed, 18 Nov 2015 00:05:23 -0700
+ -- Sebastian Kuzminsky <seb@highlab.com>  Mon, 30 Nov 2015 16:39:21 -0700
 
 linux (3.16.7-2) unstable; urgency=medium
 
