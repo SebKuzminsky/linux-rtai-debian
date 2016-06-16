@@ -1,4 +1,4 @@
-linux (3.16.7-6linuxcnc) unstable; urgency=medium
+linux (3.16.7-6linuxcnc) UNRELEASED; urgency=medium
 
   * Include the RTAI patch version info in the package Description field.
 
