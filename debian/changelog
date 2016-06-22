@@ -1,3 +1,9 @@
+linux (4.1.18-1linuxcnc) UNRELEASED; urgency=medium
+
+  * add RTAI featureset
+
+ -- Sebastian Kuzminsky <seb@highlab.com>  Wed, 16 Aug 2016 10:14:31 -0600
+
 linux (4.1.6-1) unstable; urgency=medium
 
   * New upstream stable update:
