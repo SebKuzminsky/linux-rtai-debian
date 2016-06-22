@@ -1,6 +1,8 @@
 linux (3.18.20-1linuxcnc) UNRELEASED; urgency=medium
 
-  * add RTAI featureset
+  * add RTAI featureset Vulcano, 5.0~test2, 2016-06-22:
+        kernel patch: hal-linux-3.18.20-x86-6.patch
+        md5sum: ca86ecb14f4be3731d05c75e9ba1089c
 
  -- Sebastian Kuzminsky <seb@highlab.com>  Wed, 22 Jun 2016 11:01:39 -0600
 
