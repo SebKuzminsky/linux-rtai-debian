@@ -75,4 +75,4 @@ features/all/mmc_block-increase-max_devices.patch
 features/all/of-add-optional-options-parameter-to-of_find_node_by.patch
 features/all/of-support-passing-console-options-with-stdout-path.patch
 features/all/efi-expose-underlying-uefi-firmware-platform-size-to.patch
-bugfix/all/net-sctp-fix-slab-corruption-from-use-after-free-on-.patch
+#bugfix/all/net-sctp-fix-slab-corruption-from-use-after-free-on-.patch
