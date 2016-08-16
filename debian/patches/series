@@ -88,4 +88,4 @@ features/all/grsecurity/grsecurity-kconfig.patch
 features/all/grsecurity/grkernsec_perf_harden.patch
 #bugfix/all/virtio-net-drop-netif_f_fraglist.patch
 #bugfix/all/perf-fix-aux-buffer-refcounting.patch
-bugfix/all/perf-fix-double-free-of-the-aux-buffer.patch
+#bugfix/all/perf-fix-double-free-of-the-aux-buffer.patch
