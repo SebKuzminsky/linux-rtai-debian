@@ -102,3 +102,6 @@ CONFIG_NR_CPUS=8
 # http://permalink.gmane.org/gmane.linux.real-time.xenomai.users/18499
 # https://github.com/zultron/kernel-rt-deb/issues/2
 CONFIG_PREEMPT_NONE=y
+
+# CONFIG_PREEMPT_VOLUNTARY is not set
+CONFIG_PREEMPT=y
