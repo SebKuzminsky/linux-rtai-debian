@@ -10,8 +10,7 @@
 # IPIPE options
 #
 CONFIG_IPIPE=y
-# memleak recommends this; why?
-CONFIG_IPIPE_LEGACY=y
+# CONFIG_IPIPE_LEGACY is not set
 # CONFIG_IPIPE_DEBUG is not set
 #
 #######################################
