@@ -1,10 +1,16 @@
-linux (4.1.18-3linuxcnc) UNRELEASED; urgency=medium
+linux (4.1.18-4linuxcnc) UNRELEASED; urgency=medium
+
+  * update to Paolo's 4.4 kernel config
+
+ -- Sebastian Kuzminsky <seb@highlab.com>  Wed, 03 May 2017 11:23:30 -0600
+
+linux (4.1.18-3linuxcnc) unstable; urgency=medium
 
   * update kernel patch to hal-linux-4.1.18-x86-8.patch
         shasum: 25357c43f0c28a77e3fadc52701a991612bdde9e
         from Vulcano CVS 2017-04-12
 
- -- Sebastian Kuzminsky <seb@highlab.com>  Wed, 12 Apr 2017 15:49:51 -0600
+ -- Sebastian Kuzminsky <seb@highlab.com>  Wed, 03 May 2017 11:23:17 -0600
 
 linux (4.1.18-2linuxcnc) unstable; urgency=medium
 
