@@ -105,10 +105,10 @@ CONFIG_PREEMPT_NONE=y
 # CONFIG_PREEMPT_VOLUNTARY is not set
 CONFIG_PREEMPT=y
 
-# CONFIG_HAVE_INTEL_TXT is not set
-# CONFIG_X86_HT is not set
-# CONFIG_USELIB is not set
-# CONFIG_AUDIT is not set
+
+#
+# below here is from Paolo
+#
 
 # CONFIG_HAVE_INTEL_TXT is not set
 # CONFIG_X86_HT is not set
@@ -1117,7 +1117,6 @@ CONFIG_AF_RXRPC=y
 # CONFIG_RFKILL_INPUT is not set
 
 # CONFIG_NET_9P is not set
-# CONFIG_NET_9P_VIRTIO is not set
 # CONFIG_NET_9P_RDMA is not set
 
 # CONFIG_RXKAD is not set
@@ -1344,7 +1343,6 @@ CONFIG_BLK_DEV_RAM=y
 # CONFIG_CDROM_PKTCDVD_BUFFERS is not set
 
 # CONFIG_ATA_OVER_ETH is not set
-# CONFIG_VIRTIO_BLK is not set
 # CONFIG_CDROM_PKTCDVD is not set
 # CONFIG_ATA_OVER_ETH is not set
 # CONFIG_BLK_DEV_RBD is not set
@@ -1542,7 +1540,6 @@ CONFIG_BLK_DEV_SD=y
 # CONFIG_SCSI_PMCRAID is not set
 # CONFIG_SCSI_PM8001 is not set
 # CONFIG_SCSI_BFA_FC is not set
-# CONFIG_SCSI_VIRTIO is not set
 # CONFIG_SCSI_CHELSIO_FCOE is not set
 # CONFIG_SCSI_LOWLEVEL_PCMCIA is not set
 # CONFIG_PCMCIA_AHA152X is not set
@@ -1761,7 +1758,6 @@ CONFIG_MII=y
 # CONFIG_NET_POLL_CONTROLLER is not set
 # CONFIG_TUN is not set
 # CONFIG_VETH is not set
-# CONFIG_VIRTIO_NET is not set
 # CONFIG_NLMON is not set
 # CONFIG_SUNGEM_PHY is not set
 # CONFIG_ARCNET is not set
@@ -2727,7 +2723,6 @@ CONFIG_INPUT_PCSPKR=y
 
 # CONFIG_PPDEV is not set
 # CONFIG_HVC_DRIVER is not set
-# CONFIG_VIRTIO_CONSOLE is not set
 # CONFIG_IPMI_HANDLER is not set
 
 # CONFIG_IPMI_DEVICE_INTERFACE is not set
@@ -2742,7 +2737,6 @@ CONFIG_HW_RANDOM=y
 # CONFIG_HW_RANDOM_INTEL is not set
 # CONFIG_HW_RANDOM_AMD is not set
 # CONFIG_HW_RANDOM_VIA is not set
-# CONFIG_HW_RANDOM_VIRTIO is not set
 # CONFIG_HW_RANDOM_TPM is not set
 # CONFIG_NVRAM is not set
 # CONFIG_R3964 is not set
@@ -4138,7 +4132,6 @@ CONFIG_FB_UVESA=y
 # CONFIG_FB_PM3 is not set
 # CONFIG_FB_SMSCUFX is not set
 # CONFIG_FB_UDL is not set
-# CONFIG_FB_VIRTUAL is not set
 # CONFIG_FB_SMSCUFX is not set
 # CONFIG_FB_UDL is not set
 # CONFIG_FB_IBM_GXT4500 is not set
@@ -5055,15 +5048,7 @@ CONFIG_RTC_SYSTOHC_DEVICE="rtc0"
 # CONFIG_VFIO_PCI_VGA is not set
 # CONFIG_VFIO_PCI_MMAP is not set
 # CONFIG_VFIO_PCI_INTX is not set
-# CONFIG_VIRT_DRIVERS is not set
-# CONFIG_VIRTIO is not set
 # CONFIG_UIO is not set
-# CONFIG_VIRT_DRIVERS is not set
-# CONFIG_VIRTIO_PCI is not set
-# CONFIG_VIRTIO_PCI_LEGACY is not set
-# CONFIG_VIRTIO_BALLOON is not set
-# CONFIG_VIRTIO_INPUT is not set
-# CONFIG_VIRTIO_PCI is not set
 # CONFIG_HYPERV is not set
 # CONFIG_HYPERV_UTILS is not set
 # CONFIG_HYPERV_BALLOON is not set
