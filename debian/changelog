@@ -1,6 +1,7 @@
 linux (4.1.18-4linuxcnc) UNRELEASED; urgency=medium
 
   * update to Paolo's 4.4 kernel config
+  * turn virtio back on
 
  -- Sebastian Kuzminsky <seb@highlab.com>  Wed, 03 May 2017 11:23:30 -0600
 
